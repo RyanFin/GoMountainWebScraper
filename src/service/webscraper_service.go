@@ -22,7 +22,11 @@ func (w *WebScraper) BuildMountain() error {
 		return err
 	}
 
-	fmt.Println(currentMountains)
+	// fmt.Println(currentMountains)
+
+	for _, e := range currentMountains {
+		fmt.Println(e.Name)
+	}
 
 	return nil
 }
